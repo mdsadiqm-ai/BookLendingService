@@ -1,0 +1,12 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__BooksDb: Data Source=/app/data/books.db
+    volumes:
+      - booksdata:/app/data
+volumes:
+  booksdata:
