@@ -15,8 +15,8 @@ This repository contains a .NET 8 Web API for a fictional Book Lending Service. 
 1. Persistence uses SQLite via Entity Framework Core by default for a realistic local persistence story.
 2. An in memory repository is included for unit tests and for easy switching if desired.
 3. The domain model uses optimistic concurrency via a RowVersion to protect against double checkout when multiple callers race.
-4. For adding booking i am wantedly asking for basic book information like Title & Author but i could have easily capture other important details too like:
-   PublicationYear, Edition, Publisher, Language, & PageCount but i decided not too given the scale of this project time to 3 hours :) 
+4. For book table i am only asking for basic book information like Title & Author but i could have easily capture other important details too like:
+   PublicationYear, Edition, Publisher, Language, & PageCount but i decided not to given the scale of this project time to 3 hours :) 
 5. I have also added lock on checkout to avoid concurrency exception if more than one person try to checkout at the same time.
 6. I have not implemented any authentication/authorize for these endpoints given the 3 hour timeline.
 
