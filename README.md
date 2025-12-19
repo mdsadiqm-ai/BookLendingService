@@ -32,6 +32,13 @@ Steps
    dotnet run --project src/BookLendingService.Api/BookLendingService.Api.csproj
 3. Open:
    http://localhost:63078/swagger
+Swagger UI Images:
+   <img width="1515" height="786" alt="image" src="https://github.com/user-attachments/assets/0265f836-01c5-4136-ba83-883de316f31b" />
+
+   books added to database:
+   <img width="1415" height="594" alt="image" src="https://github.com/user-attachments/assets/296b13a4-a5f4-44c0-8254-10b57a874785" />
+
+
 
 ## Local run with Docker
 1. Build image:
