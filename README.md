@@ -19,6 +19,8 @@ This repository contains a .NET 8 Web API for a fictional Book Lending Service. 
    PublicationYear, Edition, Publisher, Language, & PageCount but i decided not to given the scale of this project time to 3 hours :) 
 5. I have also added lock on checkout to avoid concurrency exception if more than one person try to checkout at the same time.
 6. I have not implemented any authentication/authorize for these endpoints given the 3 hour timeline.
+7. I could have implemented the link table for checkout history information which could help us in generating reports like how many times a book got checkout this year so we know the popularity of a book, there are so many of those things we could think and implement given 3 hrs i decided not to as a trade off
+   
 
 ## Local run with .NET
 Prerequisites
