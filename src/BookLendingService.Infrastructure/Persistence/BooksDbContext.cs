@@ -26,8 +26,12 @@ public sealed class BooksDbContext : DbContext
             .HasMaxLength(256);
         b.Property(x => x.IsAvailable)
             .IsRequired();
+
         b.Property(x => x.RowVersion)
-            .IsRowVersion()
-            .IsConcurrencyToken();
+         .IsConcurrencyToken()
+         .ValueGeneratedOnAddOrUpdate()
+         .HasColumnType("BLOB")
+         .HasDefaultValueSql("randomblob(8)");
+
     }
 }

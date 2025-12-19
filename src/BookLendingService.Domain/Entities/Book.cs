@@ -14,5 +14,5 @@ public sealed class Book
 
     public DateTimeOffset CreatedAtUtc { get; set; } = DateTimeOffset.UtcNow;
 
-    public byte[] RowVersion { get; set; } = Array.Empty<byte>();
+    public byte[]? RowVersion { get; set; }
 }
